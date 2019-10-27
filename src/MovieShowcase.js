@@ -9,13 +9,13 @@ export default class MovieShowcase extends Component {
     return movieData.map(
       <MovieCard title = {title} IMDBRating = {IMDBRating} genres = {genres} poster = {poster}>
       item => {item})
-  }
+  };
 
   render() {
-    return
+    return (
       <div id="movie-showcase">
         {this.generateMovieCards()}
       </div>
-
+    )
   }
 }
